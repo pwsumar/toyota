@@ -1,0 +1,48 @@
+.panel{
+	margin-top: 1em!important;
+	.panel-heading{
+		color: @white;
+		border-radius: 0;
+		padding: 0;
+
+    	a {
+			padding: 18px 10px;
+			background: @red-panel;
+			display: block;
+			position: relative;
+			&:before {
+				content: "\f107";
+				font-family: FontAwesome;
+			    position: absolute;
+			    right: 0;
+			    font-size: 25px;
+			    width: 50px;
+			    padding-top: 12px;
+			    text-align: center;
+			    height: 100%;
+			    top: 0;
+			    background: rgba(0, 0, 0, 0.26);
+			}
+    	}
+
+    	a.collapsed{
+    		background: @gray-panel;
+    		&:before {
+    			content: "\f106";
+    		}
+    	}
+	}
+}
+
+.panel-group .panel {
+	margin-bottom: 0;
+	border-radius: 0;
+	border: 0;
+}
+.panel-body {
+    border: 1px solid @border;
+    padding: 30px 15px;
+    font-family: @proxima;
+    line-height: 25px;
+    font-size: 15px;
+}

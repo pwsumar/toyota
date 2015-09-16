@@ -1,0 +1,156 @@
+.section-vehicles {
+    padding: 5em 0;
+    background: @bg-color;
+    overflow:hidden;
+}
+
+.parent-prod{
+	&:hover {
+		.prod{
+			&:hover {
+				.prod-cover {
+					-ms-transform: rotate(-5deg) translate(0, -60px);
+					-webkit-transform: rotate(-5deg) translate(0, -60px);
+					transform: rotate(-5deg) translate(0, -60px);
+				}
+			}
+		}
+	}
+}
+
+.prod{
+	position: relative;
+	overflow: hidden;
+
+	&:hover{
+		overflow: hidden;
+
+		.prod-title{
+			display: none;
+		}
+
+		.prod-details{
+			opacity: 1;
+			top: -60%;
+		}
+		
+		.prod-container{
+			padding: 0;
+		}
+	}
+}
+
+.prod-cover{
+	-ms-transform: rotate(-5deg) translate(0, -45px);
+    -webkit-transform: rotate(-5deg) translate(0, -45px);
+    transform: rotate(-5deg) translate(0, -45px);
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    left: -200px;
+    right: -200px;
+    height: 80px;
+    -webkit-transition: top .3s, transform .3s;
+    transition: top .3s, transform .3s;
+}
+
+.prod-img-holder{
+	overflow: hidden;
+	position: relative;
+	min-height: 300px;
+}
+
+.prod-container{
+	background: @white;
+    text-align: center;
+	position: relative;
+	-webkit-transition: transform .3s;
+    transition: transform .3s;
+	min-height: 50px;
+	
+	.prod-title {
+	    padding-left: 2em;
+	}
+
+	h4 {
+		margin-top: 0;
+		font-family: @helvetica;
+		font-weight: bold;
+		font-size: 16px;
+		text-align: left;
+	}
+}
+.prod-details {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    margin-top: 18px;
+    line-height: 1;
+    text-align: left;
+    padding: 0 2em;
+    margin: auto;
+    font-family: @proximasemibold;
+	font-weight: 200;
+
+    a {
+    	color: @red;
+    }
+}
+
+.section-footer{
+	background: @red;
+	color: @white;
+	padding: 6em;
+
+	p {
+		font-family: @proxima;
+		font-size: 15px;
+		padding-bottom: 1em;
+	}
+}
+
+.social-icon{
+	display: table;
+	text-align: center;
+	margin: auto;
+
+	li {
+		float: left;
+		list-style: none;
+		padding: .9em 1.2em;
+	    background: rgba(0, 0, 0, 0.37);
+	    margin-right: 1em;
+		a {
+			color: @white;
+
+			.fa {
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+.single-section-img {
+	img {
+		width: 100%;
+	}
+}
+
+.sidebar-list {
+	li {
+		margin-bottom: 10px;
+		
+		&:before {
+			content: "\f1b9";
+    		font: 100 15px/1 FontAwesome;
+    		color: @gray;
+		}
+	}
+}
+
+.advertisement img {
+    width: 100%;
+    margin-bottom: 2em;
+}
