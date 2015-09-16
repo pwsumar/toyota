@@ -153,7 +153,8 @@
 					</div>
 					<div class="col-md-4 p-0">
 						<div class="info-content">
-		       				<div class="info-icon"><i class="fa fa-envelope-o"></i></div>
+		       				<!-- <div class="info-icon"><i class="fa fa-envelope-o"></i></div> -->
+		       				<div class="info-icon"><i class="fa fa-mobile"></i></div>
 							<div class="info-details">
 								<p><span>Mobile: </span>0917-7165891 or 0908-8187669</p>
 								<div class="info-bottom">

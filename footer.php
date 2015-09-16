@@ -1,5 +1,5 @@
 <div class="section-footer">
-	<p class="text-center">© 2015 ToyotaCarsCebu. All rights reseverd.</p>
+	<p class="text-center">© 2015 ToyotaCarsCebu. All rights reserved.</p>
 	<ul class="social-icon">
 		<li><a href=""><i class="fa fa-facebook"></i></a></li>
 		<li><a href=""><i class="fa fa-twitter"></i></a></li>
