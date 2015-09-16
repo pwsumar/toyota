@@ -8768,7 +8768,7 @@ img.carousel-img {
   position: relative;
   -webkit-transition: transform .3s;
   transition: transform .3s;
-  min-height: 50px;
+  min-height: 60px;
   width: 101%;
 }
 .prod-container .prod-title {
