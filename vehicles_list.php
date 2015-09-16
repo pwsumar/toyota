@@ -36,7 +36,7 @@
 									<div class="gap-20"></div>
 									<a href=""><h4>Toyota Vios</h4></a>
 									<div class="view-more-list">									
-										<a href="" class="border-0 p-0 m-0">View Vehicles</a>
+										<a href="single-web.php" class="border-0 p-0 m-0">View Vehicles</a>
 									</div>
 								</div>
 							</div>
@@ -52,7 +52,7 @@
 									<div class="gap-20"></div>
 									<a href=""><h4>Toyota Vios</h4></a>
 									<div class="view-more-list">									
-										<a href="" class="border-0 p-0 m-0">View Vehicles</a>
+										<a href="single-web.php" class="border-0 p-0 m-0">View Vehicles</a>
 									</div>
 								</div>
 							</div>
@@ -68,7 +68,7 @@
 									<div class="gap-20"></div>
 									<a href=""><h4>Toyota Vios</h4></a>
 									<div class="view-more-list">									
-										<a href="" class="border-0 p-0 m-0">View Vehicles</a>
+										<a href="single-web.php" class="border-0 p-0 m-0">View Vehicles</a>
 									</div>
 								</div>
 							</div>
@@ -84,7 +84,7 @@
 									<div class="gap-20"></div>
 									<a href=""><h4>Toyota Vios</h4></a>
 									<div class="view-more-list">									
-										<a href="" class="border-0 p-0 m-0">View Vehicles</a>
+										<a href="single-web.php" class="border-0 p-0 m-0">View Vehicles</a>
 									</div>
 								</div>
 							</div>
@@ -100,7 +100,7 @@
 									<div class="gap-20"></div>
 									<a href=""><h4>Toyota Vios</h4></a>
 									<div class="view-more-list">									
-										<a href="" class="border-0 p-0 m-0">View Vehicles</a>
+										<a href="single-web.php" class="border-0 p-0 m-0">View Vehicles</a>
 									</div>
 								</div>
 							</div>
@@ -116,7 +116,7 @@
 									<div class="gap-20"></div>
 									<a href=""><h4>Toyota Vios</h4></a>
 									<div class="view-more-list">									
-										<a href="" class="border-0 p-0 m-0">View Vehicles</a>
+										<a href="single-web.php" class="border-0 p-0 m-0">View Vehicles</a>
 									</div>
 								</div>
 							</div>
@@ -132,7 +132,7 @@
 									<div class="gap-20"></div>
 									<a href=""><h4>Toyota Vios</h4></a>
 									<div class="view-more-list">									
-										<a href="" class="border-0 p-0 m-0">View Vehicles</a>
+										<a href="single-web.php" class="border-0 p-0 m-0">View Vehicles</a>
 									</div>
 								</div>
 							</div>
