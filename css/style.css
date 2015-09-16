@@ -8612,6 +8612,20 @@ p {
   padding-right: 0;
   background: #f1f4f8;
 }
+.dropdown-img {
+  overflow: hidden;
+}
+.dropdown-img img {
+  -webkit-transition: all ease-in-out 1.2s;
+  -o-transition: all ease-in-out 1.2s;
+  transition: all ease-in-out 1.2s;
+}
+.dropdown-img img:hover {
+  -webkit-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
 .banner-slider {
   background: url('../images/banner.png') no-repeat;
   background-size: cover;
