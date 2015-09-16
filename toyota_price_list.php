@@ -26,8 +26,13 @@
 			<div role="tabpanel" class="tab-pane fade in active" id="sedans">
 				<div class="container">
 					<div class="gap-50"></div>
-					<div class="tab-content-head">
-						<h3>Sedans & Hatchback</h3>					
+					<div class="row tab-content-head">
+						<div class="col-sm-6">
+							<h3>Sedans & Hatchback</h3>	
+						</div>
+						<div class="col-sm-6 pricelist-button">
+							<button type="button" class="btn btn-default">DOWNLOAD THIS PRICE LIST</button>	
+						</div>													
 					</div>
 					<div class="gap-20"></div>
 					<div class="tab-content-section-list">

@@ -32,11 +32,10 @@
 				<div class="tab-content-list animatedParent">
 					<div class="animated fadeInLeft delay-500 go">
 						<a href="">
-							<img src="images/news_list1.png" alt="">
+							<img src="images/news_list2.png" alt="">
 						</a>
 						<div class="content-title">
-							<a href=""><h3>Toyota Cars Cebu Mandaue South</h3>
-							<h3>Rainy Day Promo – June 2015</h3></a>
+							<a href=""><h3>All-in Promo - September 2014</h3>
 							<div class="content-desc">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus tempora maiores, voluptas temporibus, similique unde asperiores velit vitae facere voluptatibus sequi iure reprehenderit.</p>
 							</div>
@@ -50,11 +49,10 @@
 				<div class="tab-content-list animatedParent">
 					<div class="animated fadeInRight delay-250 go">
 						<a href="">
-							<img src="images/news_list1.png" alt="">
+							<img src="images/news_list3.png" alt="">
 						</a>
 						<div class="content-title">
-							<a href=""><h3>Toyota Cars Cebu Mandaue South</h3>
-							<h3>Rainy Day Promo – June 2015</h3></a>
+							<a href=""><h3>25th Toyota Classics</h3>
 							<div class="content-desc">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus tempora maiores, voluptas temporibus, similique unde asperiores velit vitae facere voluptatibus sequi iure reprehenderit.</p>
 							</div>
@@ -68,11 +66,27 @@
 				<div class="tab-content-list animatedParent">
 					<div class="animated fadeInLeft delay-500 go">
 						<a href="">
-							<img src="images/news_list1.png" alt="">
+							<img src="images/news_list4.png" alt="">
 						</a>
 						<div class="content-title">
-							<a href=""><h3>Toyota Cars Cebu Mandaue South</h3>
-							<h3>Rainy Day Promo – June 2015</h3></a>
+							<a href=""><h3>Vios Cup 2014</h3>
+							<div class="content-desc">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus tempora maiores, voluptas temporibus, similique unde asperiores velit vitae facere voluptatibus sequi iure reprehenderit.</p>
+							</div>
+							<div class="gap-50"></div>
+							<div class="view-more-list">									
+								<a href="" class="border-1">View More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-content-list animatedParent">
+					<div class="animated fadeInLeft delay-500 go">
+						<a href="">
+							<img src="images/news_list5.png" alt="">
+						</a>
+						<div class="content-title">
+							<a href=""><h3>The New Toyota Wigo</h3>
 							<div class="content-desc">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus tempora maiores, voluptas temporibus, similique unde asperiores velit vitae facere voluptatibus sequi iure reprehenderit.</p>
 							</div>

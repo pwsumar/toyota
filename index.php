@@ -142,23 +142,23 @@
 				<div class="container p-0">
 					<div class="col-md-4 p-0">
 						<div class="info-content">
-		       				<div class="info-icon"><i class="fa fa-envelope-o"></i></div>
+		       				<div class="info-icon"><i class="fa fa-map-marker"></i></div>
 							<div class="info-details">
-								<p><span>Address: </span>Ouano Avenue, North Reclamation Area</p>
+							<!-- 	<p><span>Address: </span>Ouano Avenue, North Reclamation Area, Mandaue City, Cebu 6014</p> -->
+								<p> <span>Address: </span> </p>
 								<div class="info-bottom">
-									<p>Mandaue City, Cebu 6014</p>
+									<p>Ouano Avenue, North Reclamation Area, Mandaue City, Cebu 6014</p>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-4 p-0">
 						<div class="info-content">
-									<div class="info-icon"><i class="fa fa-envelope-o"></i></div>
-		       				<!-- <div class="info-icon"><i class="fa fa-mobile"></i></div> -->
+		       				<div class="info-icon"><i class="fa fa-phone"></i></div>
 							<div class="info-details">
 								<p><span>Mobile: </span>0917-7165891 or 0908-8187669</p>
 								<div class="info-bottom">
-									<p><span>Direct Line:</span>(032) 316-6997</p>
+									<p><span>Direct Line:</span> (032) 316-6997</p>
 								</div>
 							</div>
 						</div>

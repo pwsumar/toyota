@@ -9288,3 +9288,11 @@ th.price-title p {
   line-height: 25px;
   font-size: 15px;
 }
+.pricelist-button button {
+  float: right;
+  margin-top: 11px;
+  background-color: #a6acb2;
+  color: white;
+  height: 50px;
+  width: 40%;
+}
