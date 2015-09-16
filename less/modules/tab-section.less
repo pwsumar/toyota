@@ -71,6 +71,14 @@
 .view-specs {
 	background: @bg-color;
 	color: @white!important;
+    -webkit-transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+        background-color: @white;
+        color: @red!important;
+        border: 1px solid @red;
+    }
 }
 
 .tab-content-list-vehicle {

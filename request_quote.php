@@ -24,7 +24,7 @@
 					  <div class="form-group">
 					    <textarea name="comment" id="" cols="30" rows="10" class="form-control" placeholder="Your Comment"></textarea>
 					  </div>
-					  <button type="submit" class="btn btn-default btn-submit">Submit</button>
+					  <button type="submit" class="btn btn-default btn-submit btn-effects">Submit</button>
 					</form>
 				</div>
 			</div>

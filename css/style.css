@@ -9020,6 +9020,13 @@ img.carousel-img {
 .view-specs {
   background: #2f3337;
   color: #ffffff !important;
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+}
+.view-specs:hover {
+  background-color: #ffffff;
+  color: #d70015 !important;
+  border: 1px solid #d70015;
 }
 .tab-content-list-vehicle {
   margin-right: 2em;
@@ -9095,6 +9102,8 @@ img.carousel-img {
   color: #fff;
   font-size: 16px;
   font-family: 'proximanovasbold';
+}
+.btn-effects {
   -webkit-transition: background-color 0.3s, color 0.3s;
   transition: background-color 0.3s, color 0.3s;
   position: relative;
@@ -9102,16 +9111,16 @@ img.carousel-img {
   -webkit-backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
 }
-.btn-submit:hover {
+.btn-effects:hover {
   background-color: #fff;
   color: #d70015;
 }
-.btn-submit:hover:before {
+.btn-effects:hover:before {
   -webkit-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1);
   opacity: 1;
 }
-.btn-submit:before {
+.btn-effects:before {
   content: '';
   position: absolute;
   top: 0;
