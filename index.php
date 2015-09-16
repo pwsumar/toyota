@@ -10,25 +10,23 @@
 					<div class="carousel-inner" role="listbox">
 						<div class="item active animatedParent">
 						  <div class="row">
-						  	<div class="animated fadeInLeft go">
-						  		<div class="col-md-6 intact first left-col">
-							      	<div class="carousel-caption p-0">
-							      		<div class="gap-100"></div>
-								      	<h2 class="carousel-title">Take a new route.</h2>
-								      	<p>See where the 2015 Avalon XLE takes you</p>
-								    </div>
-								    <div class="gap-100"></div>
-								    <a href="#" class="btn btn-success btn-view">View Details</a>
+					  		<div class="col-md-6 intact first left-col">
+						      	<div class="carousel-caption p-0">
+						      		<div class="gap-100"></div>
+							      	<h2 class="carousel-title">Take a new route.</h2>
+							      	<p>See where the 2015 Avalon XLE takes you</p>
 							    </div>
-						  	</div>
+							    <div class="gap-100"></div>
+							    <a href="#" class="btn btn-success btn-view">View Details</a>
+						    </div>
 							<div class="col-md-6 intact second right-col">
-								<div class="image-holder animated fadeInRight go">
+								<div class="image-holder">
 									<img class="carousel-img" src="images/banner-img.png" alt="">
 								</div>
 							</div>
 						  </div>
 					    </div>
-					    <div class="item">
+					    <div class="item animatedParent">
 						  <div class="row">
 						  	<div class="col-md-6 intact first left-col">
 						      	<div class="carousel-caption p-0">
@@ -50,7 +48,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="section-vehicles">
+		<div class="section-vehicles animatedParent">
 			<div class="container p-0">
 				<div class="parent-prod">
 					<div class="col-md-3">

@@ -8769,6 +8769,7 @@ img.carousel-img {
   -webkit-transition: transform .3s;
   transition: transform .3s;
   min-height: 50px;
+  width: 101%;
 }
 .prod-container .prod-title {
   padding-left: 2em;
