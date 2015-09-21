@@ -8558,12 +8558,14 @@ p {
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.21);
   -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.21);
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.21);
+  border: 0;
+  /*overflow: hidden;*/
 }
 .nav-list > li {
   border-left: 1px solid #eaeaea;
 }
 .nav-list > li > a {
-  padding: 1.3em 2em;
+  padding: 20px;
   font-family: 'ProximaNovaReg';
   color: #43474b !important;
   text-transform: uppercase;
@@ -8575,6 +8577,17 @@ p {
 }
 .nav-list > li:last-child {
   background-color: #d70015;
+  position: relative;
+  /*
+		&:after{
+			width: 350%;
+			height: 100%;
+			top: 0;
+			right: -350%;
+			position: absolute;
+			content:'';
+			background: @red;
+		}*/
 }
 .nav-list > li:last-child > a {
   color: #ffffff !important;
@@ -8586,6 +8599,8 @@ p {
   background: #f1f4f8;
   padding: 1em 0;
   border: 0;
+  border-radius: 0;
+  z-index: 9999;
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   -ms-transition: all .3s ease;
@@ -8712,10 +8727,10 @@ img.carousel-img {
   right: 0;
 }
 .col-md-6.intact.second.right-col {
-  right: 18%;
+  right: 10%;
 }
 .col-md-6.intact.first.left-col {
-  left: 18%;
+  left: 10%;
 }
 .sub-page-banner {
   background: url('../images/sp_banner.png') no-repeat;
@@ -8856,7 +8871,7 @@ img.carousel-img {
   margin-bottom: 2em;
 }
 .section-inquiry {
-  background: url('../images/building-img.png') repeat;
+  background: url('../images/buildings.png') no-repeat;
   background-size: cover;
   padding: 3em 0 0;
 }
@@ -8880,7 +8895,7 @@ img.carousel-img {
   font-family: 'proximanovasbold';
   font-size: 16px;
 }
-.left-bubble p:after {
+.left-bubble:after {
   content: ' ';
   position: absolute;
   right: -2em;
@@ -8904,7 +8919,7 @@ img.carousel-img {
   font-family: 'proximanovasbold';
   font-size: 16px;
 }
-.right-bubble p:after {
+.right-bubble:after {
   content: ' ';
   position: absolute;
   left: -2em;
@@ -8914,6 +8929,14 @@ img.carousel-img {
   border-top: 40px solid #D70015;
   border-left: 40px solid transparent;
   top: 40%;
+}
+.img-icon {
+  margin: auto;
+  max-width: 350px;
+  width: 100%;
+}
+.img-icon img {
+  max-width: 100%;
 }
 .section-info {
   background: #d4d7da;

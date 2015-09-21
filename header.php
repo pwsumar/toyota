@@ -13,7 +13,7 @@
 	</head>
 	<body>
 		<nav class="navbar navbar-default navbar-menu">
-            <div class="container p-0">
+            <div class="container">
                 <div class="navbar-header">
                     <!-- <button class="menu-button" id="open-button">Open Menu</button> -->
                     <a class="navbar-brand" href="#"><img src="images/logo.png"></a>

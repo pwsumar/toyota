@@ -142,6 +142,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/buildings.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19875,
+		"inputAbbreviatedPath": "\/images\/buildings.png",
+		"outputAbbreviatedPath": "\/images\/buildings.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/controls.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -2150,7 +2161,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Philweb Services",
+"lastSavedByUser": "Web Developer",
 "manualImportLinks": {
 	},
 "projectAttributes": {

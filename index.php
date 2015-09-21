@@ -59,7 +59,7 @@
 							</div>
 							<div class="prod-container">
 								<div class="prod-title">
-									<h4>Crossover & SUV's</h2>
+									<h4>Crossover & SUV's</h4>
 								</div>
 								<div class="prod-details">
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elitised.</p>
@@ -76,7 +76,7 @@
 							</div>
 							<div class="prod-container">
 								<div class="prod-title">
-									<h4>Crossover & SUV's</h2>
+									<h4>Crossover & SUV's</h4>
 								</div>
 								<div class="prod-details">
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elitised.</p>
@@ -93,7 +93,7 @@
 							</div>
 							<div class="prod-container">
 								<div class="prod-title">
-									<h4>Crossover & SUV's</h2>
+									<h4>Crossover & SUV's</h4>
 								</div>
 								<div class="prod-details">
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elitised.</p>
@@ -110,7 +110,7 @@
 							</div>
 							<div class="prod-container">
 								<div class="prod-title">
-									<h4>Crossover & SUV's</h2>
+									<h4>Crossover & SUV's</h4>
 								</div>
 								<div class="prod-details">
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elitised.</p>

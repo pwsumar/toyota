@@ -1,5 +1,5 @@
 .section-inquiry{
-	background: url('../images/building-img.png') repeat;
+	background: url('../images/buildings.png') no-repeat;
 	background-size: cover;
 	padding: 3em 0 0;
 }
@@ -24,18 +24,22 @@
 	p {
 		font-family: @proximasemibold;
 		font-size: 16px;
+	}
 
-		&:after{
-			content: ' ';
-			position: absolute;
-			right: -2em;
-			margin: auto;
-			width: 0;
-			height: 0;
-			border-bottom: 40px solid #D70015;
-			border-right: 40px solid transparent;
-			bottom: 30%;
-		}
+	&:after{
+		content: ' ';
+		position: absolute;
+		right: -2em;
+		margin: auto;
+		width: 0;
+		height: 0;
+		border-bottom: 40px solid #D70015;
+		border-right: 40px solid transparent;
+		bottom: 30%;
+	}
+
+	@media(max-width: 600px){
+
 	}
 }
 
@@ -51,19 +55,29 @@
     p{
     	font-family: @proximasemibold;
     	font-size: 16px;
-
-    	&:after{
-			content: ' ';
-			position: absolute;
-			left: -2em;
-			margin: auto;
-			width: 0;
-			height: 0;
-			border-top: 40px solid #D70015;
-			border-left: 40px solid transparent;
-			top: 40%;
-    	}
     }
+
+    &:after{
+		content: ' ';
+		position: absolute;
+		left: -2em;
+		margin: auto;
+		width: 0;
+		height: 0;
+		border-top: 40px solid #D70015;
+		border-left: 40px solid transparent;
+		top: 40%;
+	}
+}
+
+.img-icon{
+	margin: auto;
+	max-width: 350px;
+	width: 100%;
+
+	img{
+		max-width: 100%;
+	}
 }
 
 .section-info{
