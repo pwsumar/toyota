@@ -1,0 +1,104 @@
+.tab-list-section {
+	background: @bg-color;
+}
+.tab-list-custom {
+    border: 0;
+    display: table;
+    text-align: center;
+    width: 100%;
+    display: block;
+
+    li {
+        width: 25%;
+    	margin-bottom: 0;
+    	border-right: 1px solid rgba(255, 255, 255, 0.09);
+    	a {
+            font-size: 14px;
+    		border: 0!important;
+    		color: @white!important;
+    		padding: 20px 30px;
+    		border-radius: 0;
+			font-family: @proxima;
+			text-transform: uppercase;
+			font-weight: bold;
+			width: 100%;
+    		margin-right: 0;
+            display: block;
+
+			&:hover, &:focus {
+				background: @red;
+				color: @white;
+			}
+    	}
+    }
+
+    li.active {
+    	a {
+    		background: @red;
+    		&:hover, &:focus {
+				background: @red;
+				color: @white;
+			}
+    	}
+    }
+}
+
+.tab-content-section-list {
+    overflow: hidden;
+}
+
+.tab-content-list {
+	position: relative;
+    margin: 3em 0em 5em;
+    border: 1px solid @border;
+
+    .content-title {
+	    padding: 10px;
+	}
+
+	.content-desc {
+		padding: 1em 0;
+        max-width: 550px;
+        width: 100%;
+	}
+}
+
+.tab-img-wrapper{
+    max-width: 450px;
+    width: 100%;
+    
+    img{
+        max-width: 100%;
+    }
+}
+
+.view-more-list a {
+    padding: .8em 2em;
+    color: @red;
+    text-transform: uppercase;
+    margin-right: 2em;
+    font-family: @proximasemibold;
+}
+
+.view-specs {
+	background: @bg-color;
+	color: @white!important;
+    -webkit-transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+        background-color: @white;
+        color: @red!important;
+        border: 1px solid @red;
+    }
+}
+
+.tab-content-list-vehicle {
+	margin-right: 2em;
+    margin-bottom: 4em;
+    padding-bottom: 2em;
+
+	img {
+		width: 100%;
+	}
+}
