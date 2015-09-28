@@ -253,8 +253,15 @@ function twentyfifteen_scripts() {
 	wp_enqueue_script( 'twentyfifteen-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '20150330', true );
 
 	/// THEMES ENQUEUE
+	wp_enqueue_style( 'animation-css', get_template_directory_uri() . '/css/animations.css');
+	wp_enqueue_style( 'flex-css', get_template_directory_uri() . '/css/flexslider.css');
 	wp_enqueue_style( 'main-css', get_template_directory_uri() . '/css/style.css');
-	wp_enqueue_style( 'font-awesome-css', get_template_directory_uri() . '/css/font-awesome.min.css');
+
+	wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/js/modernizr.custom.js', array( 'jquery' ), '5343634', true );
+	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '5754745', true );
+	wp_enqueue_script( 'css3-animate-it', get_template_directory_uri() . '/js/css3-animate-it.js', array( 'jquery' ), '069769', true );
+	wp_enqueue_script( 'flexslider', get_template_directory_uri() . '/js/jquery.flexslider.js', array( 'jquery' ), '123425', true );
+	wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', array( 'jquery' ), '4657658', true );
 	////////////
 
 	wp_localize_script( 'twentyfifteen-script', 'screenReaderText', array(
@@ -360,3 +367,105 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
+
+
+////CHANGE POSTS NAME
+function revcon_change_post_label() {
+    global $menu;
+    global $submenu;
+    $menu[5][0] = 'News & Promo';
+    $submenu['edit.php'][5][0] = 'News & Promo';
+    $submenu['edit.php'][10][0] = 'Add News & Promo';
+    $submenu['edit.php'][16][0] = 'News Tags';
+    echo '';
+}
+function revcon_change_post_object() {
+    global $wp_post_types;
+    $labels = &$wp_post_types['post']->labels;
+    $labels->name = 'News';
+    $labels->singular_name = 'News & Promo';
+    $labels->add_new = 'Add News & Promo';
+    $labels->add_new_item = 'Add News & Promo';
+    $labels->edit_item = 'Edit News & Promo';
+    $labels->new_item = 'News & Promo';
+    $labels->view_item = 'View News & Promo';
+    $labels->search_items = 'Search News & Promo';
+    $labels->not_found = 'No News & Promo found';
+    $labels->not_found_in_trash = 'No News & Promo found in Trash';
+    $labels->all_items = 'All News & Promo';
+    $labels->menu_name = 'News & Promo';
+    $labels->name_admin_bar = 'News & Promo';
+}
+ 
+add_action( 'admin_menu', 'revcon_change_post_label' );
+add_action( 'init', 'revcon_change_post_object' );
+
+
+///////POST-TYPES PRODUCTS 
+function my_custom_post_product() {
+    $labels = array(
+      'name'               => _x( 'Products', 'post type general name' ),
+      'singular_name'      => _x( 'Product', 'post type singular name' ),
+      'add_new'            => _x( 'Add New', 'Product' ),
+      'add_new_item'       => __( 'Add New Product' ),
+      'edit_item'          => __( 'Edit Product' ),
+      'new_item'           => __( 'New Product' ),
+      'all_items'          => __( 'All Products' ),
+      'view_item'          => __( 'View Product' ),
+      'search_items'       => __( 'Search Product' ),
+      'not_found'          => __( 'No Product found' ),
+      'not_found_in_trash' => __( 'No Product found in the Trash' ), 
+      'parent_item_colon'  => '',
+      'menu_name'          => 'Products'
+    );
+    $args = array(
+
+    	'labels'        => $labels,
+        'description'   => 'Holds our product specific data.',
+        'public'        => true,
+        'menu_position' => 5,
+        'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
+        'has_archive'   => true,    
+        'publicly_queryable' => true,
+        'show_ui' => true,
+        'query_var' => true,
+        'rewrite' => array('slug' => 'product', 'with_front' => true),
+        'capability_type' => 'post',
+        'hierarchical' => false,
+    );
+
+
+    register_post_type( 'product', $args ); 
+
+
+  }
+  add_action( 'init', 'my_custom_post_product' );
+
+  function my_taxonomies_product() {
+    $labels = array(
+      'name'              => _x( 'Product Category', 'taxonomy general name' ),
+      'singular_name'     => _x( 'Product Category', 'taxonomy singular name' ),
+      'search_items'      => __( 'Search Product Categories' ),
+      'all_items'         => __( 'All Product Categories' ),
+      'parent_item'       => __( 'Parent Product Category' ),
+      'parent_item_colon' => __( 'Parent Product Category:' ),
+      'edit_item'         => __( 'Edit Product Category' ), 
+      'update_item'       => __( 'Update Product Category' ),
+      'add_new_item'      => __( 'Add New Product Category' ),
+      'new_item_name'     => __( 'New Product Category' ),
+      'menu_name'         => __( 'Product Categories' ),
+    );
+    $args = array(
+    	'labels'            => $labels,
+    	'public' => true,
+		'hierarchical' => true,
+		'show_ui' => true,
+		'show_in_nav_menus' => true,
+		'query_var' => true,
+      	'rewrite' => array('slug' => 'product-category'),
+    );
+    register_taxonomy( 'product_category', 'product', $args );
+  }
+  add_action( 'init', 'my_taxonomies_product' );
+
+

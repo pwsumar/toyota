@@ -16,49 +16,82 @@
  * @since Twenty Fifteen 1.0
  */
 
-get_header(); ?>
+get_header(); 
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+$taxonomy = 'product_category';
+$terms = get_terms($taxonomy, array('hide_empty' => false));
+$selected_term = $wp_query->queried_object;
+?>
+<div class="sub-page-banner">
+	<h1>Toyota <span>Vehicles</span></h1>
+</div>
 
-		<?php if ( have_posts() ) : ?>
-
-			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
+<div class="section-client-list">
+  <!-- Nav tabs -->
+  	<div class="tab-list-section">
+  		<div class="container">
+	  		<ul class="nav nav-tabs tab-list-custom" role="tablist">
+	  			<!-- query all taxonomy -->
+	  			<?php
+	  			if ($terms):
+				  foreach($terms as $cntr => $term):
+				  $term_link = get_term_link( $term );
+					//If there was an error, continue to the next term.
+				    if ( is_wp_error( $term_link ) ) {
+				        continue;
+				    }
 				?>
-			</header><!-- .page-header -->
+					<li role="presentation" class="<?php echo (($cntr == 0 &&  is_wp_error($selected_term)) || ( !is_wp_error($selected_term) && $selected_term->slug == $term->slug )) ? 'active' : ''; ?>">
+						<a href="#<?php echo $term->slug; ?>" aria-controls="<?php echo $term->slug; ?>" role="tab" data-toggle="tab"><?php echo $term->name; ?></a>
+					</li>
+	            	<?php endforeach; ?>
+				<?php endif; ?>
+			</ul>
+		</div>
+  	</div>
+  	<!-- Tab panes -->
+	<div class="tab-content">
+	<!-- query all post in a taxonomy -->
+	<?php
+	if ($terms):
+	  foreach($terms as $cntr => $term):
+	?>
+		<div role="tabpanel" class="tab-pane fade in <?php echo (($cntr == 0 &&  is_wp_error($selected_term)) || ( !is_wp_error($selected_term) && $selected_term->slug == $term->slug )) ? 'active' : ''; ?>" id="<?php echo $term->slug; ?>">
+			<div class="container">
+				<div class="gap-50"></div>
+				<div class="tab-content-head">
+					<h3><?php echo $term->name; ?></h3>
+					<p><?php echo $term->description; ?></p>
+				</div>
+				<div class="tab-content-section-list">
+				<?php 
+				query_posts(array(
+				'post_type' => 'product',
+				'tax_query' => array(
+						array('taxonomy' => 'product_category', 'terms' => array($term->term_id))
+					),
+				'post_per_page' => '-1',
+				));
+				if ( have_posts() ) : ?>
+					<?php
+					// Start the Loop.
+					while(have_posts()) : the_post(); 
+						/*
+						 * Include the Post-Format-specific template for the content.
+						 * If you want to override this in a child theme, then include a file
+						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+						 */
+						get_template_part( 'content', 'vehicles' );
 
-			<?php
-			// Start the Loop.
-			while ( have_posts() ) : the_post();
+					// End the loop.
+					endwhile; wp_reset_query(); ?>
+				<?php endif; ?>
+				</div>
+			</div>
+		</div>
+		<?php endforeach; ?>
+	<?php endif; ?>
+	</div>
 
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part( 'content', get_post_format() );
-
-			// End the loop.
-			endwhile;
-
-			// Previous/next page navigation.
-			the_posts_pagination( array(
-				'prev_text'          => __( 'Previous page', 'twentyfifteen' ),
-				'next_text'          => __( 'Next page', 'twentyfifteen' ),
-				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>',
-			) );
-
-		// If no content, include the "No posts found" template.
-		else :
-			get_template_part( 'content', 'none' );
-
-		endif;
-		?>
-
-		</main><!-- .site-main -->
-	</section><!-- .content-area -->
 
 <?php get_footer(); ?>

@@ -21,9 +21,8 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 	 */
 	public function start_lvl( &$output, $depth = 0, $args = array() ) {
 		$indent = str_repeat( "\t", $depth );
-		$output .= "\n$indent<ul role=\"menu\" class=\" dropdown-menu\">\n";
+		$output .= "\n$indent<ul role=\"menu\" class=\" dropdown-menu animated fadeIn go\">\n"."<div class=\" container\">";
 	}
-
 	/**
 	 * @see Walker::start_el()
 	 * @since 3.0.0
@@ -195,7 +194,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 
 			$fb_output .= '>';
 			$fb_output .= '<li><a href="' . admin_url( 'nav-menus.php' ) . '">Add a menu</a></li>';
-			$fb_output .= '</ul>';
+			$fb_output .= '</div>'.'</ul>';
 
 			if ( $container )
 				$fb_output .= '</' . $container . '>';
