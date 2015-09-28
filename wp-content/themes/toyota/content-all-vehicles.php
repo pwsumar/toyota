@@ -9,9 +9,9 @@
  * @since Twenty Fifteen 1.0
  */
 ?>
-<div class="col-md-3 p-0 animatedParent">
+<div class="col-md-3 col-sm-6 col-xs-12 p-0 animatedParent">
 	<div class="tab-content-section-list animated fadeIn go">
-		<div class="tab-content-list-vehicle border-1">
+		<div class="tab-content-list-vehicle border-1 ">
 			<a href="<?php echo the_permalink(); ?>">
 				<?php the_post_thumbnail('medium'); ?>
 			</a>

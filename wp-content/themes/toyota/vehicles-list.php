@@ -36,9 +36,9 @@ get_header();
 	  	</div>
 	  	<!-- Tab panes -->
 		<div class="tab-content">
-			<div role="tabpanel" class="tab-pane fade in active" id="all-vehicles">
+			<div role="tabpanel" class="tab-pane fade in active " id="all-vehicles">
 				<div class="gap-100"></div>
-				<div class="container p-0">
+				<div class="container p-0 ">
 					<?php 
 					query_posts(array(
 						'post_type' => 'product',
@@ -61,6 +61,7 @@ get_header();
 					<?php endif; ?>
 				</div>
 			</div>
+			
 		</div>
 	</div>
 <?php get_footer(); ?>

@@ -8629,7 +8629,12 @@ p {
   transform: scale(1.1, 1.1);
 }
 .navbar-nav > li.dropdown:hover > .dropdown-menu {
-  display: block!important;
+  display: block;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: transparent;
 }
 .banner-slider {
   background: url('../images/banner.png') no-repeat;
@@ -8647,7 +8652,7 @@ p {
 .carousel-indicators .active {
   width: 12px;
   height: 12px;
-  border: 2px solid #565c62;
+  border: 2px solid #EAEAEA;
 }
 .carousel-indicators .active {
   margin: 1px;
@@ -9007,7 +9012,6 @@ img.carousel-img {
 .tab-content-list {
   position: relative;
   margin: 3em 0em 5em;
-  border: 1px solid #eaeaea;
 }
 .tab-content-list .content-title {
   padding: 10px;
@@ -9045,7 +9049,7 @@ img.carousel-img {
 .tab-content-list-vehicle {
   margin-right: 2em;
   margin-bottom: 4em;
-  padding-bottom: 2em;
+  min-height: 330px;
 }
 .tab-content-list-vehicle img {
   width: 100%;
@@ -9317,12 +9321,12 @@ th.price-title p {
 .btn:hover {
   background-color: #a6acb2;
   color: #FFFFFF;
-  border: none;
+  border: 1px solid #D70115;
 }
 .btn:active {
   background-color: #a6acb2;
   color: #FFFFFF;
-  border: none;
+  border: 1px solid #D70115;
 }
 @media (max-width: 736px) and (min-width: 320px) {
   .collapsed {
@@ -9341,6 +9345,10 @@ th.price-title p {
   img.carousel-img {
     z-index: -1;
     right: -120px;
+  }
+  .dropdown-menu li {
+    margin-right: -40px;
+    margin-left: -10px;
   }
   .col-md-6.intact.first.left-col {
     left: 6%;
@@ -9364,6 +9372,15 @@ th.price-title p {
 @media (max-width: 768px) {
   .navbar-brand {
     padding: 11px 10px;
+  }
+  .dropdown-menu .dropdown-img img {
+    height: 150px;
+  }
+  .dropdown-menu .gap-20 {
+    height: 12px;
+  }
+  .dropdown-menu p {
+    font-size: 15px;
   }
   img.carousel-img {
     z-index: -1;
@@ -9406,9 +9423,9 @@ th.price-title p {
   }
 }
 @media (max-width: 736px) {
-  .banner-slider {
-    top: -35px;
-  }
+  /*	.banner-slider {
+		top: -35px;
+	}*/
   .col-md-6.intact.first.left-col {
     left: 3%;
   }
@@ -9418,56 +9435,27 @@ th.price-title p {
   .section-vehicles {
     margin-top: -35px;
   }
+  .section-vehicles .prod {
+    width: 58%;
+    left: 22%;
+  }
   .section-vehicles .prod-details p {
     margin: 20px 0 10px;
   }
   .section-bottom .img-icon img {
-    margin-left: 186px;
-    margin-top: -200px;
-  }
-  .section-bottom .bubble {
-    top: 5px;
-    width: 25%;
-  }
-  .p-0 {
-    overflow: hidden;
-  }
-  .sub-page-banner {
-    margin-top: -35px;
-  }
-  .pricelist-button button {
-    margin-top: -50px;
-  }
-}
-@media (max-width: 667px) {
-  img.carousel-img {
-    height: 240px;
-  }
-  .section-bottom .img-icon img {
-    margin-left: 139px;
+    margin-left: 210px;
     margin-top: -208px;
+    max-height: 310px;
   }
   .section-bottom .bubble {
-    top: -20px;
-    width: 25%;
+    top: -15px;
+    width: 28%;
   }
-  .tab-list-custom li a {
-    font-size: 16px;
+  .section-bottom .left-bubble p {
+    font-size: 14px;
   }
-  .quote-form {
-    width: 90%;
-  }
-}
-@media (max-width: 600px) {
-  img.carousel-img {
-    height: 220px;
-  }
-  .section-bottom .img-icon img {
-    margin-top: -238px;
-    margin-left: 127px;
-  }
-  .section-vehicles .prod-details p {
-    margin: 20px 0 10px;
+  .section-bottom .right-bubble p {
+    font-size: 14px;
   }
   .section-info {
     margin-left: -35px;
@@ -9485,32 +9473,78 @@ th.price-title p {
     margin-bottom: 1em;
     font-size: 13px;
   }
+  .p-0 {
+    overflow: hidden;
+  }
+  .sub-page-banner {
+    margin-top: -35px;
+  }
+  .pricelist-button button {
+    margin-top: -50px;
+  }
+}
+@media (max-width: 667px) {
+  img.carousel-img {
+    height: 240px;
+  }
+  .section-info {
+    margin-left: -35px;
+    padding: 0.5em 0;
+  }
+  .section-info p {
+    font-size: 13px;
+    margin: 0 0 5px;
+  }
+  .section-info img {
+    max-width: 60%;
+  }
+  .section-content p {
+    font-size: 14px;
+    width: 85%;
+  }
+  .tab-list-custom li a {
+    font-size: 16px;
+  }
+  .quote-form {
+    width: 90%;
+  }
+}
+@media (max-width: 600px) {
+  img.carousel-img {
+    height: 220px;
+  }
+  .sub-page-banner h1 {
+    font-size: 52px;
+  }
+  .section-bottom .img-icon img {
+    margin-top: -238px;
+    margin-left: 127px;
+  }
+  .section-vehicles .prod-details p {
+    margin: 20px 0 10px;
+  }
   .section-inquiry {
     display: none;
   }
   .section-footer {
     padding: 3em;
+    font-size: 9px;
   }
   .tab-list-custom li a {
     font-size: 13px;
+  }
+  .section-content-list h3 {
+    font-size: 22px;
+  }
+  .pricelist-button button {
+    font-size: 12px;
+    margin-top: -41px;
   }
 }
 @media (max-width: 568px) {
   .section-bottom .img-icon img {
     margin-top: -238px;
     margin-left: 105px;
-  }
-  .left-bubble {
-    -webkit-animation: none;
-    animation: none;
-  }
-  .right-bubble {
-    -webkit-animation: none;
-    animation: none;
-  }
-  .fadeInDownShort.go {
-    -webkit-animation-name: none;
-    animation-name: none;
   }
   .info-bottom p {
     font-size: 12px;
@@ -9526,15 +9560,13 @@ th.price-title p {
   .gap-100 {
     height: 75px;
   }
+  .sub-page-banner h1 {
+    font-size: 57px;
+  }
   img.carousel-img {
-    height: 213px;
-    right: -165px;
-  }
-  .prod-details p {
-    font-size: 13px;
-  }
-  .prod-details a {
-    font-size: 12px;
+    height: 233px;
+    right: -229px;
+    top: -288px;
   }
   .section-bottom .img-icon img {
     margin-left: 92px;
@@ -9545,8 +9577,21 @@ th.price-title p {
     width: 27%;
     top: -12px;
   }
+  .section-vehicles {
+    margin-top: -35px;
+  }
+  .section-vehicles .prod {
+    width: 81%;
+    left: 12%;
+  }
+  .section-vehicles .prod-details p {
+    margin: 20px 0 10px;
+  }
   .section-inquiry {
     height: 458px;
+  }
+  .section-info {
+    margin-left: 0px;
   }
   .section-info .p-0 {
     padding-left: 17px;
@@ -9561,14 +9606,22 @@ th.price-title p {
   .view-more-list a {
     margin-top: 1em;
   }
+  .section-client-list h3 {
+    font-size: 19px;
+  }
   .pricelist-button button {
-    margin-top: 0px;
+    margin-top: -33px;
+    padding: 8px 8px;
+    font-size: 11px;
   }
   th.price-title p {
     font-size: 13px;
   }
 }
 @media (max-width: 384px) {
+  .banner .image-holder img {
+    display: none;
+  }
   .section-bottom .bubble {
     width: 26%;
     top: -39px;
@@ -9588,7 +9641,7 @@ th.price-title p {
     height: 379px;
   }
   .section-footer {
-    padding: 3em;
+    padding: 4em;
   }
   .info-details .info-bottom {
     margin: 0 0 6px;
@@ -9598,6 +9651,32 @@ th.price-title p {
   }
   .quote-form:before {
     left: 40%;
+  }
+  .section-client-list h3 {
+    font-size: 21px;
+    width: 51%;
+  }
+  .pricelist-button button {
+    margin-top: -15%;
+    padding: 12px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 375px) {
+  h2.carousel-title {
+    font-size: 50px;
+  }
+  .carousel-inner p {
+    font-size: 15px;
+  }
+  .prod-details p {
+    font-size: 14px;
+  }
+  .section-footer {
+    font-size: 7px;
+  }
+  .section-footer p {
+    font-size: 14px;
   }
 }
 @media (max-width: 320px) {
@@ -9637,10 +9716,10 @@ th.price-title p {
     padding-left: 1em;
   }
   .prod-details p {
-    font-size: 9px;
+    font-size: 13px;
   }
   .prod-details a {
-    font-size: 8px;
+    font-size: 13px;
   }
   .prod-title h4 {
     font-size: 13px;
@@ -9648,6 +9727,9 @@ th.price-title p {
   .section-info {
     margin-left: -37px;
     padding: none;
+  }
+  .section-info .p-0 {
+    padding-left: 12px;
   }
   .section-vehicles {
     margin-top: -40px;
@@ -9660,12 +9742,14 @@ th.price-title p {
   .p-0 {
     width: 270px;
   }
-  .section-footer {
-    padding: 1em;
-  }
   .tab-list-custom li a {
     font-size: 10px;
     padding: 13px 5px;
+  }
+  .pricelist-button button {
+    margin-top: -16%;
+    padding: 8px;
+    font-size: 10px;
   }
 }
 @media (max-width: 240px) {

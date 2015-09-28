@@ -38,7 +38,7 @@ get_header();
 									<div class="image-holder">
 									<?php
 							        if( !empty($banner_image) ): ?>
-							          <img src="<?php echo $banner_image['url']; ?>" alt="<?php echo $banner_image['alt']; ?>" />
+							          <img class= "carousel-img" src="<?php echo $banner_image['url']; ?>" alt="<?php echo $banner_image['alt']; ?>" />
 							      	<?php endif; ?>
 									</div>
 								</div>
