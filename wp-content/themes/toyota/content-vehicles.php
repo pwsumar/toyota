@@ -10,7 +10,7 @@
  */
 ?>
 <div class="tab-content-list animatedParent">
-<div class="animated">
+<div class="animated border-1">
 	<div class="row">
 		<div class="col-md-5 col-sm-5 p-0">
 			<div class="tab-img-wrapper">
