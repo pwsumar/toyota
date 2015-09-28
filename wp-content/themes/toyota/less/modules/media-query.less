@@ -18,6 +18,10 @@
 		z-index: -1;
 		right: -120px;
 	}
+	.dropdown-menu li {
+		margin-right: -40px;
+		margin-left: -10px;
+	}
 	.col-md-6.intact.first.left-col {
 		left: 6%; 
 	}
@@ -48,6 +52,19 @@
 @media (max-width: 768px) {
 	.navbar-brand {
 		padding: 11px 10px;
+	}
+	.dropdown-menu {
+		.dropdown-img {
+			img {
+				height: 150px;
+			}
+		}
+		.gap-20 {
+			height: 12px;
+		}
+		p {
+			font-size: 15px;
+		}
 	}
 	img.carousel-img {
 		z-index: -1;
@@ -115,8 +132,10 @@
 	}
 	.section-vehicles {
 		margin-top: -35px;
-	}
-	.section-vehicles {
+		.prod {
+			width: 58%;
+			left: 22%;
+		}
 		.prod-details p {
 			margin: 20px 0 10px;
 		}
@@ -124,16 +143,40 @@
 	.section-bottom {
 		.img-icon {
 			img {
-				margin-left: 186px;
-				margin-top: -200px;
+				margin-left: 210px;
+				margin-top: -208px;
+				max-height: 310px;
 			}
 		}
 		.bubble {
-			top: 5px;
-			width: 25%;
+			top: -15px;
+			width: 28%;
+		}
+		.left-bubble p {
+			font-size: 14px;
+		}
+		.right-bubble p {
+			font-size: 14px;
 		}
 	}
 
+	.section-info {
+		margin-left: -35px;
+		padding: 0.5em 0;
+		p {
+			font-size: 13px;
+			margin: 0 0 5px;
+		}
+		img {
+			max-width: 60%;
+		}
+	}
+
+	.section-content p{
+		width: 85%;
+		margin-bottom: 1em;
+		font-size: 13px;
+	}
 
 	.p-0 {
 		overflow: hidden;
@@ -146,29 +189,28 @@
 	.pricelist-button button {
 		margin-top: -50px;
 	}
-
 }
 
 @media (max-width: 667px) {
 	img.carousel-img {
 		height: 240px;
 	}
-	.section-bottom {
-		.img-icon {
-			img {
-				margin-left: 139px;
-				margin-top: -208px;
-			}
+
+	.section-info {
+		margin-left: -35px;
+		padding: 0.5em 0;
+		p {
+			font-size: 13px;
+			margin: 0 0 5px;
+		}
+		img {
+			max-width: 60%;
 		}
 	}
-
-	.section-bottom {
-		.bubble {
-			top: -20px;
-			width: 25%;
-		}
+	.section-content p {
+		font-size: 14px;
+		width: 85%;
 	}
-
 	.tab-list-custom li a {
 		font-size: 16px;
 	}
@@ -184,6 +226,12 @@
 	img.carousel-img {
 		height: 220px;
 	}
+
+	.sub-page-banner {
+		h1 {
+			font-size: 52px;
+		}
+	}
 	.section-bottom {
 		.img-icon {
 			img {
@@ -197,30 +245,26 @@
 			margin: 20px 0 10px;
 		}
 	}
-	.section-info {
-		margin-left: -35px;
-		padding: 0.5em 0;
-		p {
-			font-size: 13px;
-			margin: 0 0 5px;
-		}
-		img {
-			max-width: 60%;
-		}
-	}
-	.section-content p{
-		width: 85%;
-		margin-bottom: 1em;
-		font-size: 13px;
-	}
 	.section-inquiry {
 		display: none;
 	}
 	.section-footer {
 		padding: 3em;
+		font-size: 9px;
 	}
 	.tab-list-custom li a {
 		font-size: 13px;
+	}
+
+	//pricelist
+	.section-content-list {
+		h3 {
+			font-size: 22px;
+		}
+	}
+	.pricelist-button button {
+		font-size: 12px;
+		margin-top: -41px;
 	}
 
 }
@@ -233,20 +277,6 @@
 				margin-left: 105px;
 			}
 		}
-	}
-
-	.left-bubble {
-		-webkit-animation: none;
-		animation: none;
-	}
-	.right-bubble {
-		-webkit-animation: none;
-		animation: none;
-	}
-
-	.fadeInDownShort.go {
-		-webkit-animation-name: none;
-		animation-name: none;
 	}
 
 	.info-bottom p {
@@ -267,16 +297,13 @@
 	.gap-100 {
 		height: 75px;
 	}
+	.sub-page-banner h1 {
+		font-size: 57px;
+	}
 	img.carousel-img {
-		height: 213px;
-		right: -165px;
-	}
-
-	.prod-details p {
-		font-size: 13px;
-	}
-	.prod-details a {
-		font-size: 12px;
+		height: 233px;
+		right: -229px;
+		top: -288px;
 	}
 	.section-bottom {
 		.img-icon {
@@ -291,10 +318,21 @@
 			top: -12px;
 		}
 	}
+	.section-vehicles {
+		margin-top: -35px;
+		.prod {
+			width: 81%;
+			left: 12%;
+		}
+		.prod-details p {
+			margin: 20px 0 10px;
+		}
+	}
 	.section-inquiry {
 		height: 458px;
 	}
 	.section-info {
+		margin-left: 0px;
 		.p-0 {
 			padding-left: 17px;
 		}
@@ -314,8 +352,15 @@
 	}
 
 	//price-list
+	.section-client-list {
+		h3 {
+			font-size: 19px;
+		}
+	}
 	.pricelist-button button {
-		margin-top: 0px;
+		margin-top: -33px;
+		padding: 8px 8px;
+		font-size: 11px;
 	}
 	th.price-title p {
 		font-size: 13px;
@@ -324,6 +369,13 @@
 }
 
 @media (max-width: 384px) {
+	.banner {
+		.image-holder {
+			img {
+				display: none;
+			}
+		}
+	}
 	.section-bottom {
 		.bubble {
 			width: 26%;
@@ -347,12 +399,11 @@
 			}
 		}
 	}
-
 	.section-inquiry {
 		height: 379px;
 	}
 	.section-footer {
-		padding: 3em;
+		padding: 4em;
 	}
 	.info-details {
 		.info-bottom {
@@ -360,8 +411,6 @@
 			margin: 0 0 6px;
 		}
 	}
-
-
 	.tab-list-custom li a {
 		font-size: 12px;
 	}
@@ -370,10 +419,37 @@
 		left: 40%;
 	}
 
+	.section-client-list {
+		h3 {
+			font-size: 21px;
+			width: 51%
+		}
+	}
+	.pricelist-button button {
+		margin-top: -15%;
+		padding: 12px;
+		font-size: 12px;
+	}
 }
 
+@media (max-width: 375px) {
+	h2.carousel-title {
+		font-size: 50px;
+	}
 
-
+	.carousel-inner p {
+		font-size: 15px;
+	}
+	.prod-details p {
+		font-size: 14px;
+	}
+	.section-footer {
+		font-size: 7px;
+		p {
+			font-size: 14px;
+		}
+	}
+}
 
 @media (max-width: 320px) {
 	.collapsed {
@@ -417,10 +493,10 @@
 		padding-left: 1em;
 	}
 	.prod-details p {
-		font-size: 9px;
+		font-size: 13px;
 	}
 	.prod-details a {
-		font-size: 8px;
+		font-size: 13px;
 	}
 
 	.prod-title {
@@ -432,6 +508,10 @@
 	.section-info {
 		margin-left: -37px;
 		padding: none;
+	}
+
+	.section-info .p-0 {
+		padding-left: 12px;
 	}
 
 	.section-vehicles {
@@ -450,16 +530,18 @@
 	.p-0 {
 		width: 270px;
 	}
-	.section-footer {
-		padding: 1em;
-	}
 
 	.tab-list-custom li a {
 		font-size: 10px;
 		padding: 13px 5px;
 	}
 
-
+	//pricelist 
+	.pricelist-button button {
+		margin-top: -16%;
+		padding: 8px;
+		font-size: 10px;
+	}
 }
 
 @media (max-width: 240px) {
@@ -472,17 +554,14 @@
 		margin-top: 11px;
 		height: 22px;
 	}
-
 	.navbar-brand {
 		height: 50% !important;
 	}
-
 	.carousel-inner {
 		p {
 			font-size: 10px;
 		}
 	}
-
 	h2.carousel-title {
 		font-size: 25px;
 	}
@@ -498,8 +577,6 @@
 			font-size: 11px;
 		}
 	}
-
-
 	.sub-page-banner {
 		height: 287px;
 		 h1 {
@@ -509,11 +586,9 @@
 	.get-a-quote h2 {
 		font-size: 25px;
 	}
-
 	.quote-form h3 {
 		font-size: 15px;
 	}
-
 	.section-footer {
 		font-size: 6px;
 		padding: 4em;
@@ -526,14 +601,8 @@
 		height: 35px;
 		font-size: 13px;
 	}
-
 	.quote-form:before {
 		left: 34%;
 		top: 21%;
 	}
 }
-
-
-
-
-
