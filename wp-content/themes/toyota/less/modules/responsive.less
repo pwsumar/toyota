@@ -101,6 +101,10 @@
 		font-size: 10px;
 	}
 
+	.section-footer {
+		padding: 3em;
+	}
+
 
 
 	//all vehicles 
@@ -135,6 +139,13 @@
 
 	.navbar-toggle {
 		margin-right: 30px;
+	}
+
+	.sub-page-banner {
+		height: 237px;
+		h1 {
+			font-size: 50px;
+		}
 	}
 
 	.col-md-6.intact.first.left-col {
@@ -190,6 +201,9 @@
 		margin-bottom: 1em;
 		font-size: 13px;
 	}
+	.section-footer {
+		font-size: 8px;
+	}
 
 	.p-0 {
 		overflow: hidden;
@@ -211,6 +225,11 @@
 	.pricelist-button button {
 		margin-top: -50px;
 	}
+
+	// request a quote
+	.nav-list > li:last-child a {
+		padding-left: 25px;
+	}
 }
 
 @media (max-width: 667px) {
@@ -220,9 +239,15 @@
 			font-size: 12px;
 		}
 	}
-
 	img.carousel-img {
 		height: 240px;
+	}
+
+	.sub-page-banner {
+		height: 200px;
+		h1 {
+			font-size: 46px;
+		}
 	}
 	.section-info {
 		margin-left: -35px;
@@ -240,14 +265,29 @@
 		width: 85%;
 	}
 	.tab-list-custom li a {
-		font-size: 16px;
+		font-size: 9px;
 	}
 
 		//request quote
+	.get-a-quote {
+		padding-top: 3em;
+		h2 {
+			font-size: 28px;
+		}
+	}
 	.quote-form {
 		width: 90%;
+		h3 {
+			font-size: 21px;
+		}
 	}
-
+	.quote-form:before {
+		top: 14%;
+	}
+	.form-control {
+		font-size: 15px;
+		height: 40px;
+	}
 	.tab-content-list-vehicle {
 		margin-left: 29%;
 	}
@@ -265,6 +305,12 @@
 			}
 		}
 	}
+	.sub-page-banner {
+		height: 231px;
+		h1 {
+			font-size: 45px;
+		}
+	}
 	.section-vehicles {
 		.prod-details p {
 			margin: 20px 0 10px;
@@ -274,8 +320,11 @@
 		display: none;
 	}
 	.section-footer {
-		padding: 3em;
-		font-size: 9px;
+		padding: 4em;
+		font-size: 7px;
+		p {
+			font-size: 13px;
+		}
 	}
 	.tab-list-custom li a {
 		font-size: 13px;
@@ -312,6 +361,12 @@
 			height: 49px;
 		}
 	}
+	.nav-list > li:last-child a {
+		padding-left: 20px;
+	}
+	.sub-page-banner {
+		height: 208px;
+	}
 
 	h2.carousel-title {
 		font-size: 50px;
@@ -345,7 +400,10 @@
 
 	//request quote
 	.quote-form {
-		padding: 3em 2em;
+		padding: 3em 3em;
+	}
+	.quote-form:before {
+		top: 13%;
 	}
 	.tab-content-list-vehicle {
 		margin-left: 26%;
@@ -365,8 +423,11 @@
 	.gap-100 {
 		height: 75px;
 	}
-	.sub-page-banner h1 {
-		font-size: 57px;
+	.sub-page-banner {
+		height: 255px;
+		h1 {
+			font-size: 46px;
+		}
 	}
 	h2.carousel-title {
 		font-size: 45px;
@@ -444,6 +505,12 @@
 	th.price-title p {
 		font-size: 13px;
 	}
+	//request a quote
+	.quote-form:before {
+		-webkit-animation: none;
+		animation: none;
+		left: 40%;
+	}
 }
 
 @media (max-width: 384px) {
@@ -453,6 +520,9 @@
 				display: none;
 			}
 		}
+	}
+	.sub-page-banner h1 {
+		font-size: 44px;
 	}
 	h2.carousel-title {
 		font-size: 40px;
@@ -488,21 +558,22 @@
 	}
 	.section-footer {
 		padding: 4em;
+		font-size: 5px;
+		p {
+			font-size: 11px;
+		}
 	}
 	.info-details {
 		.info-bottom {
-			
 			margin: 0 0 6px;
 		}
 	}
 	.tab-list-custom li a {
 		font-size: 12px;
 	}
-
 	.quote-form:before {
 		left: 40%;
 	}
-
 	.section-client-list {
 		h3 {
 			font-size: 21px;
@@ -518,19 +589,28 @@
 	.tab-content-list-vehicle {
 		margin-left: 13%;
 	}
+
+	//request a quote 
+	.get-a-quote h2 {
+		font-size: 26px;
+	}
+	.quote-form:before {
+		top: 12%;
+	}
+	.quote-form h3 {
+		font-size: 19px;
+	}
 }
 
 @media (max-width: 375px) {
+	.sub-page-banner {
+		height: 258px;
+	}
 	.prod-details p {
 		font-size: 14px;
 	}
-	.section-footer {
-		font-size: 7px;
-		p {
-			font-size: 14px;
-		}
-	}
-			//all vehicles 
+
+	//all vehicles 
 	.tab-content-list-vehicle {
 		margin-left: 11%;
 	}
@@ -543,6 +623,17 @@
 	}
 	.navbar-brand img {
 		width: 75%;
+	}
+	.navbar-collapse li {
+		margin: -11px 0px;
+		a {
+			font-size: 10px;
+		}
+	}
+	.sub-page-banner {
+		h1 {
+			font-size: 41px;
+		}
 	}
 	.carousel-inner {
 		p {
