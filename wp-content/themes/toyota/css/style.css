@@ -9510,6 +9510,11 @@ th.price-title p {
   .nav-list > li:last-child a {
     padding-left: 25px;
   }
+  .tab-content-section-list {
+    width: 100%;
+    margin-left: 19%;
+    max-width: 417px;
+  }
 }
 @media (max-width: 667px) {
   .navbar-collapse li {
@@ -9611,6 +9616,9 @@ th.price-title p {
   .tab-content-list-vehicle {
     margin-left: 28%;
   }
+  .tab-content-section-list {
+    margin-left: 15%;
+  }
 }
 @media (max-width: 568px) {
   .navbar-brand img {
@@ -9658,6 +9666,9 @@ th.price-title p {
   }
   .tab-content-list-vehicle {
     margin-left: 26%;
+  }
+  .tab-content-section-list {
+    margin-left: 12%;
   }
 }
 @media (max-width: 414px) {
@@ -9746,6 +9757,9 @@ th.price-title p {
     -webkit-animation: none;
     animation: none;
     left: 40%;
+  }
+  .tab-content-section-list {
+    margin-left: 0%;
   }
 }
 @media (max-width: 384px) {
