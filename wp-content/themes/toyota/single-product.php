@@ -13,41 +13,27 @@ get_header(); ?>
 	<div class="gap-100"></div>
 	<div class="container">
 		<div class="col-md-8">
-		<?php
-		// Start the loop.
-		while ( have_posts() ) : the_post();
+			<?php
+				// Start the loop.
+				while ( have_posts() ) : the_post();
 
-			/*
-			 * Include the post format-specific template for the content. If you want to
-			 * use this in a child theme, then include a file called called content-___.php
-			 * (where ___ is the post format) and that will be used instead.
-			 */
-			get_template_part( 'content', get_post_format() );
+					/*
+					 * Include the post format-specific template for the content. If you want to
+					 * use this in a child theme, then include a file called called content-___.php
+					 * (where ___ is the post format) and that will be used instead.
+					 */
+					get_template_part( 'content', get_post_format() );
 
-		// End the loop.
-		endwhile;
-		?>
-		<div class="gap-50"></div>
+				// End the loop.
+				endwhile;
+			?>
+			<div class="gap-50"></div>
 		</div>
 		<div class="col-md-1"></div>
 		<div class="col-md-3">
 			<div class="single-sidebar">
 				<div class="gap-50"></div>
-				<div class="sidebar-content">
-					<div class="tab-content-head">
-						<h4 class="text-capitalize">Sedans & Hatchback</h4>
-						<div class="bottom-underline"></div>
-					</div>
-					<div class="gap-20"></div>
-					<ul class="sidebar-list">
-						<li><a href="">Toyota Camry</a></li>
-						<li><a href="">Toyota Corolla Atlis</a></li>
-						<li><a href="">Toyota Vios</a></li>
-						<li><a href="">Toyota Wigo</a></li>
-						<li><a href="">Toyota Yaris</a></li>
-					</ul>
-					<div class="gap-50"></div>
-				</div>
+
 				<div class="sidebar-content">
 					<div class="tab-content-head">
 						<h4 class="text-capitalize">Vehicles</h4>
@@ -56,18 +42,18 @@ get_header(); ?>
 					<div class="gap-20"></div>
 					<ul class="sidebar-list">
 					<?php	
-					$taxonomy = 'product_category';
-					$terms = get_terms($taxonomy, array('hide_empty' => false));
-					if ($terms):
-					  foreach($terms as $term):
-					  $term_link = get_term_link( $term );
-						//If there was an error, continue to the next term.
-					    if ( is_wp_error( $term_link ) ) {
-					        continue;
-					    }
-					?>
-						<li><a href="<?php echo esc_url($term_link); ?>"><?php echo $term->name; ?></a></li>
-		            	<?php endforeach; ?>
+						$taxonomy = 'product_category';
+						$terms = get_terms($taxonomy, array('hide_empty' => false));
+						if ($terms):
+						  foreach($terms as $term):
+						  $term_link = get_term_link( $term );
+							//If there was an error, continue to the next term.
+						    if ( is_wp_error( $term_link ) ) {
+						        continue;
+						    }
+						?>
+							<li><a href="<?php echo esc_url($term_link); ?>"><?php echo $term->name; ?></a></li>
+			      <?php endforeach; ?>
 					<?php endif; ?>
 					</ul>
 					<div class="gap-50"></div>

@@ -40,63 +40,14 @@
 		     
 		      <ul class="nav navbar-nav navbar-right">
 		      	<?php 
-								wp_nav_menu( array(
-	                'menu'              => 'main-menu',
-	               	'theme_location' => 'primary-menu',
-	              	'menu_class' => 'nav navbar-nav nav-list',
-	              	'fallback_cb'     => 'wp_bootstrap_navwalker::fallback',
-	              	'walker'          => new wp_bootstrap_navwalker()
-	              	));
-							?>
-							<!--  <ul class="nav navbar-nav nav-list">
-      					<li><a href="index.php"><span>Home</span></a></li>
-      					<li class="dropdown">
-      						<a href="vehicles.php">Vehicles<span class="caret"></span></a>
-      						<ul class="dropdown-menu animated fadeIn go">
-      							<div class="container">
-      								<li>
-      									<a href="client_listing_web.php">
-      								    	<div class="dropdown-img">
-      								    		<img src="<?php echo get_template_directory_uri(); ?>/images/drop-1.png">
-      								    	</div>
-      								    	<div class="gap-20"></div>
-      								    	<p>Sedan & Hatchback</p>
-      							    	</a>
-      							    </li>
-      							    <li>
-      							    	<a href="client_listing_web.php">
-      								    	<div class="dropdown-img">
-      								    		<img src="<?php echo get_template_directory_uri(); ?>/images/drop-2.png">
-      								    	</div>
-      								    	<div class="gap-20"></div>
-      								    	<p>Crossovers & SUVs</p>
-      							    	</a>
-      							    </li>
-      							    <li>
-      							    	<a href="client_listing_web.php">
-      								    	<div class="dropdown-img">
-      								    		<img src="<?php echo get_template_directory_uri(); ?>/images/drop-2.png">
-      								    	</div>
-      								    	<div class="gap-20"></div>
-      								    	<p>Vans & Pick-up</p>
-      							    	</a>
-      							    </li>
-      							    <li>
-      							    	<a href="client_listing_web.php">
-      								    	<div class="dropdown-img">
-      								    		<img src="<?php echo get_template_directory_uri(); ?>/images/drop-2.png">
-      								    	</div>
-      								    	<div class="gap-20"></div>
-      								    	<p>Hybrid Cars</p>
-      							    	</a>
-      							    </li> 
-      							</div>
-      						</ul>
-      					</li>
-      					<li><a href="toyota_price_list.php"><span>Price List</span></a></li>
-      					<li><a href="news_promo.php"><span>News & Promo</span></a></li>
-      					<li><a href="request_quote.php"><span>Get Quote</span></a></li>
-                </ul> -->
+				wp_nav_menu( array(
+                'menu'              => 'main-menu',
+               	'theme_location' => 'primary-menu',
+              	'menu_class' => 'nav navbar-nav nav-list',
+              	'fallback_cb'     => 'wp_bootstrap_navwalker::fallback',
+              	'walker'          => new wp_bootstrap_navwalker()
+              	));
+				?>
 		      </ul>
 
 		    </div><!-- /.navbar-collapse -->

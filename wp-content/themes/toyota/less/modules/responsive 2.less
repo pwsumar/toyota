@@ -122,6 +122,10 @@
 		width: 85%;
 	}
 
+	//price-list
+	.tab-pane {
+		/*margin-left: -12px;*/
+	}
 }
 
 @media (max-width: 736px) {
@@ -132,11 +136,25 @@
 		padding-left: 43px;
 		overflow: hidden;
 	}
-
 	.navbar-toggle {
 		margin-right: 30px;
 	}
 
+	.dropdown-menu {
+		li.dropdown:hover {
+			display: none;
+		}
+	}
+
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+		color: #FFFFFF;
+		background-color: #D70015;
+	}
+	.navbar-nav > li > .dropdown-menu {
+		padding: 0em;
+		margin-left: 5%;
+		margin-top: -1%;
+	}
 	.sub-page-banner {
 		height: 237px;
 		h1 {
@@ -206,6 +224,11 @@
 	}
 
 	//all vehicles 
+	.tab-content-section-list {
+		margin-left: 13%;
+		max-width: 417px;
+		width: 100%;
+	}
 	.tab-content-list-vehicle {
 		margin-left: 31%;
 		max-width: 286px;
@@ -228,11 +251,11 @@
 	}
 
 	//news and promo
-	.tab-content-section-list {
+/*	.tab-content-section-list {
 		width: 100%;
 		margin-left: 19%;
 		max-width: 417px;
-	}
+	}*/
 }
 
 @media (max-width: 667px) {
@@ -343,8 +366,9 @@
 		font-size: 12px;
 		margin-top: -41px;
 	}
+
 	.tab-content-list-vehicle {
-		margin-left: 28%;
+		margin-left: 20%;
 	}
 		//news and promo
 	.tab-content-section-list {

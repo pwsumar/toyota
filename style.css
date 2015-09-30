@@ -8590,10 +8590,6 @@ p {
   -ms-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
-  /*	li:last-child {
-		padding-right: 0;
-		background: @drop-bg;
-	}*/
 }
 .dropdown-menu li {
   padding-right: 4em;
@@ -8606,6 +8602,10 @@ p {
 .dropdown-menu li a {
   padding: 0;
   display: block;
+}
+.dropdown-menu li:last-child {
+  padding-right: 0;
+  background: #f1f4f8;
 }
 /*.dropdown-img {
     overflow: hidden;
@@ -9416,6 +9416,9 @@ th.price-title p {
   .quote-form {
     width: 85%;
   }
+  .tab-pane {
+    /*margin-left: -12px;*/
+  }
 }
 @media (max-width: 736px) {
   .navbar-brand img {
@@ -9600,6 +9603,9 @@ th.price-title p {
   .pricelist-button button {
     font-size: 12px;
     margin-top: -41px;
+  }
+  .tab-content-list-vehicle {
+    margin-left: 30%;
   }
   .tab-content-list-vehicle {
     margin-left: 28%;
@@ -9927,37 +9933,13 @@ th.price-title p {
     font-size: 13px;
   }
 }
-.navbar-nav > li > .dropdown-menu {
-  padding: 10px 0px;
-}
-.dropdown-menu {
-  left: -18px !important;
-  min-width: 180px;
-}
-.dropdown-menu li {
-  padding-right: 0em;
-  margin: 10px;
-}
-.dropdown-menu li a {
-  padding: 0px 8px;
-}
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
   background-color: #D70015;
+  padding: 1px 13px;
 }
-img.carousel-img {
-  z-index: -1;
-}
-.tab-img-wrapper img {
-  height: auto;
-}
-.tab-content-list-vehicle {
-  min-height: 320px;
-}
-.tab-content-list-vehicle > a {
-  height: 210px;
-  display: block;
-  overflow: hidden;
-  position: relative;
+.dropdown-menu li a {
+  margin-left: 160px;
+  font-size: 20px;
 }

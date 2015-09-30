@@ -33,21 +33,6 @@ get_header(); ?>
 			<div class="gap-50"></div>
 			<div class="sidebar-content">
 				<div class="tab-content-head">
-					<h4 class="text-capitalize">Sedans & Hatchback</h4>
-					<div class="bottom-underline"></div>
-				</div>
-				<div class="gap-20"></div>
-				<ul class="sidebar-list">
-					<li><a href="">Toyota Camry</a></li>
-					<li><a href="">Toyota Corolla Atlis</a></li>
-					<li><a href="">Toyota Vios</a></li>
-					<li><a href="">Toyota Wigo</a></li>
-					<li><a href="">Toyota Yaris</a></li>
-				</ul>
-				<div class="gap-50"></div>
-			</div>
-			<div class="sidebar-content">
-				<div class="tab-content-head">
 					<h4 class="text-capitalize">Vehicles</h4>
 					<div class="bottom-underline"></div>
 				</div>

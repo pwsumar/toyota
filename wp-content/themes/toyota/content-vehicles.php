@@ -19,15 +19,15 @@
 		</div>
 		<div class="col-md-7 col-sm-7 col-xs-12">
 			<div class="content-title">
-				<a href=""><h3><?php the_title() ?></h3></a>
+				<a href="<?php echo the_permalink(); ?>"><h3><?php the_title() ?></h3></a>
 				<div class="content-desc">
 					<p><?php $content = get_the_content(); 
               		echo mb_strimwidth($content, 0, 400, '...')  ?></p>
 				</div>
 				<div class="gap-50"></div>
 				<div class="view-more-list">									
-					<a href="<?php echo the_permalink(); ?>" class="btn border-1">View More</a>
-					<a class="btn view-specs" href="">View Full Specs</a>
+					<!-- <a href="<?php echo the_permalink(); ?>" class="btn border-1">View More</a> -->
+					<a class="btn view-specs" href="<?php echo the_permalink(); ?>">View Full Specs</a>
 				</div>
 			</div>
 		</div>

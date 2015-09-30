@@ -3,9 +3,12 @@
 		z-index: -1;
 		right: -120px;
 	}
-	.dropdown-menu li {
+/*	.dropdown-menu li {
 		margin-right: -40px;
 		margin-left: -10px;
+	}*/
+	.dropdown-menu li:first-child {
+		padding-left: 20%;
 	}
 	.col-md-6.intact.first.left-col {
 		left: 6%; 
@@ -38,11 +41,17 @@
 	}
 }	
 
+/*@media (min-width: 768px) {
+	.navbar-right .dropdown-menu {
+		right: 38%;
+	}
+}*/
+
 @media (max-width: 768px) {
 	.navbar-brand {
 		padding: 11px 10px;
 	}
-	.dropdown-menu {
+/*	.dropdown-menu {
 		.dropdown-img {
 			img {
 				height: 150px;
@@ -54,6 +63,10 @@
 		p {
 			font-size: 15px;
 		}
+	}*/
+	.dropdown-menu li:first-child {
+		padding-left: 7%;
+		padding-right: 5%;
 	}
 	img.carousel-img {
 		z-index: -1;
@@ -122,6 +135,10 @@
 		width: 85%;
 	}
 
+	//price-list
+	.tab-pane {
+		/*margin-left: -12px;*/
+	}
 }
 
 @media (max-width: 736px) {
@@ -342,6 +359,10 @@
 	.pricelist-button button {
 		font-size: 12px;
 		margin-top: -41px;
+	}
+
+	.tab-content-list-vehicle {
+		margin-left: 30%;
 	}
 	.tab-content-list-vehicle {
 		margin-left: 28%;
