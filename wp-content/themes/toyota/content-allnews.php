@@ -19,7 +19,7 @@
 			</div>
 			<div class="col-md-7 col-sm-7 col-xs-12">
 				<div class="content-title">
-					<a href=""><h3><?php the_title(); ?></h3></a>
+					<a href="<?php echo the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
 					<div class="content-desc">
 						<p><?php $content = get_the_content(); 
               			echo mb_strimwidth($content, 0, 400, '...');?></p>

@@ -17,7 +17,7 @@
 			</a>
 			<div class="content-title text-center">
 				<div class="gap-20"></div>
-				<a href=""><h4><?php the_title(); ?></h4></a>
+				<a href="<?php echo the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>
 				<div class="view-more-list">									
 					<a href="<?php echo the_permalink(); ?>" class="border-0 p-0 m-0">View Vehicles</a>
 				</div>

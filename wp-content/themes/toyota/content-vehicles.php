@@ -25,8 +25,7 @@
               		echo mb_strimwidth($content, 0, 400, '...')  ?></p>
 				</div>
 				<div class="gap-50"></div>
-				<div class="view-more-list">									
-					<!-- <a href="<?php echo the_permalink(); ?>" class="btn border-1">View More</a> -->
+				<div class="view-more-list">
 					<a class="btn view-specs" href="<?php echo the_permalink(); ?>">View Full Specs</a>
 				</div>
 			</div>

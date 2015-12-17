@@ -111,7 +111,7 @@ get_header();
 					<p>If you want to find great deals, latest offers and promo on any  car, feel free to contact me</p>
 				</div>					
 				<div class="img-icon text-center">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/img-icon.png" alt="">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/paola.png" alt="">
 				</div>
 			</div>
 		</div>
